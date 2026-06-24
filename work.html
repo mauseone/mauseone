@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — MauseOne</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">MauseOne</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+
+    <main class="gallery">
+      <div class="grid">
+        <img src="images/photo-01.jpg" alt="" />
+        <img src="images/photo-02.jpg" alt="" />
+        <img src="images/photo-03.jpg" alt="" />
+        <img src="images/photo-04.jpg" alt="" />
+        <img src="images/photo-05.jpg" alt="" />
+        <img src="images/photo-06.jpg" alt="" />
+      </div>
+    </main>
+    <footer>
+      <p>© 2026 MauseOne Photography. All rights reserved.</p>
+    </footer>
+    <div id="lightbox">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+
+      document.querySelectorAll('.grid img').forEach(img => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add('active');
+        });
+      });
+
+      lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Hong Kong — MauseOne</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">MauseOne</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+
+    <main class="post">
+      <div class="post-content">
+        <p class="post-meta">June 2026</p>
+        <h1>Shooting Hong Kong</h1>
+
+        <p>I went to Hong Kong not knowing what I was looking for. By the end I wasn't sure I'd found it. But I kept shooting anyway.</p>
+
+        <div class="post-grid">
+          <img src="images/hk-01.jpg" alt="" />
+          <img src="images/hk-02.jpg" alt="" />
+          <img src="images/hk-03.jpg" alt="" />
+          <img src="images/hk-04.jpg" alt="" />
+        </div>
+
+        <p>Some days I came back with nothing worth keeping. Other days a single frame made the whole walk worthwhile. I stopped trying to force it.</p>
+
+        <div class="post-grid">
+          <img src="images/hk-05.jpg" alt="" />
+          <img src="images/hk-06.jpg" alt="" />
+          <img src="images/hk-07.jpg" alt="" />
+          <img src="images/hk-08.jpg" alt="" />
+        </div>
+
+        <p>The alleys were quieter than the main streets but busier in a different way. People going about their lives, not performing for anyone. I tried to stay out of the way.</p>
+
+        <div class="post-grid">
+          <img src="images/hk-09.jpg" alt="" />
+          <img src="images/hk-10.jpg" alt="" />
+          <img src="images/hk-11.jpg" alt="" />
+          <img src="images/hk-12.jpg" alt="" />
+        </div>
+
+        <p>By day four I wasn't sure if I was seeing more or just getting tired. Maybe both. I kept shooting anyway.</p>
+
+        <div class="post-grid">
+          <img src="images/hk-13.jpg" alt="" />
+          <img src="images/hk-14.jpg" alt="" />
+          <img src="images/hk-15.jpg" alt="" />
+          <img src="images/hk-16.jpg" alt="" />
+        </div>
+
+        <p>I flew home with more questions than answers, which I've come to think is the right outcome. Hong Kong isn't a city you figure out. It's a city that stays with you.</p>
+
+        <div class="post-grid">
+          <img src="images/hk-17.jpg" alt="" />
+          <img src="images/hk-18.jpg" alt="" />
+          <img src="images/hk-19.jpg" alt="" />
+          <img src="images/hk-20.jpg" alt="" />
+        </div>
+
+      </div>
+    </main>
+    <div id="lightbox">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+
+      document.querySelectorAll('.post-grid img').forEach(img => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add('active');
+        });
+      });
+
+      lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+      });
+    </script>
+    <footer>
+      <p>© 2026 MauseOne Photography. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
