@@ -121,8 +121,19 @@ nav a:hover {
 /* Work page */
 .gallery {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 3rem 2rem;
+}
+
+.gallery-description {
+  max-width: 560px;
+  width: 100%;
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
 .grid {
@@ -441,4 +452,35 @@ footer {
   width: 18px;
   height: 18px;
   opacity: 0.8;
+}
+
+/* Gallery header */
+.gallery-header {
+  max-width: 900px;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.gallery-header h1 {
+  font-size: 0.85rem !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  font-weight: normal !important;
+}
+
+.gallery-description {
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+  max-width: 900px;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #666;
 }
