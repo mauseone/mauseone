@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooting Yogyakarta — Mause One</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">MauseOne</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+
+    <main class="post">
+      <div class="post-content">
+        <p class="post-meta">November 2025</p>
+        <h1>Shooting Yogyakarta</h1>
+
+        <p>Yogyakarta was the first trip where I went somewhere specifically to shoot. Not a holiday with a camera in the bag — a trip with a purpose. I didn't fully know what that purpose was yet. I just knew I wanted to find out.</p>
+
+        <div class="post-grid">
+          <img src="images/yogja-01.jpg" alt="" />
+          <img src="images/yogja-02.jpg" alt="" />
+          <img src="images/yogja-03.jpg" alt="" />
+          <img src="images/yogja-04.jpg" alt="" />
+        </div>
+
+        <p>The first few days were uncomfortable. I didn't know how close to get, when to raise the camera, when to put it down. I shot too cautiously and came back with frames that felt safe and said nothing.</p>
+
+        <div class="post-grid">
+          <img src="images/yogja-05.jpg" alt="" />
+          <img src="images/yogja-06.jpg" alt="" />
+          <img src="images/yogja-07.jpg" alt="" />
+          <img src="images/yogja-08.jpg" alt="" />
+        </div>
+
+        <p>Somewhere in the middle of the trip something shifted. I stopped thinking about the camera and started paying attention to people. Not crowds, not streets — individual people. A face. A gesture. A moment between two people that had nothing to do with me. That's when the frames started feeling like something.</p>
+
+        <div class="post-grid">
+          <img src="images/yogja-09.jpg" alt="" />
+          <img src="images/yogja-10.jpg" alt="" />
+          <img src="images/yogja-11.jpg" alt="" />
+          <img src="images/yogja-12.jpg" alt="" />
+        </div>
+
+        <p>I came back from Yogyakarta knowing one thing I didn't know before — I want to be close. Not wide, not distant, not safe. I shoot best when there's a person in the frame and I'm close enough to see their eyes. Everything since has been about getting comfortable with that.</p>
+
+        <div class="post-grid">
+          <img src="images/yogja-13.jpg" alt="" />
+          <img src="images/yogja-14.jpg" alt="" />
+          <img src="images/yogja-15.jpg" alt="" />
+          <img src="images/yogja-16.jpg" alt="" />
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 MauseOne Photography. All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <script>
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+
+      document.querySelectorAll('.post-grid img').forEach(img => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add('active');
+        });
+      });
+
+      lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+      });
+    </script>
+  </body>
+</html>
