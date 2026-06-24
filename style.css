@@ -411,4 +411,22 @@ footer {
     max-width: 100%;
   }
 
+.home-text {
+    width: 90vw;
+    align-items: center;
+  }
+
+  .tagline {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+  }
+
+  .home-posts {
+    width: 100%;
+  }
+
+  .home-posts-label {
+    text-align: left;
+  }
+
 }
