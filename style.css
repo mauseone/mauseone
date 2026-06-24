@@ -318,6 +318,8 @@ footer {
   text-decoration: none;
   padding: 0.75rem 0;
   border-bottom: 1px solid #1a1a1a;
+  color: inherit;
+  text-decoration: none;
 }
 
 .home-post-title {
@@ -336,4 +338,77 @@ footer {
   color: #333;
   font-size: 0.7rem;
   letter-spacing: 0.1em;
+}
+
+/* Fix link colors globally */
+.home-posts a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+  }
+
+  .home-posts {
+    width: 90vw;
+  }
+
+  .home-posts a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  .home-post-title {
+    color: #aaa;
+    font-size: 0.75rem;
+  }
+
+  .home-post-date {
+    color: #444;
+    font-size: 0.7rem;
+  }
+
+  .gallery {
+    padding: 2rem 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post {
+    padding: 3rem 1.5rem;
+  }
+
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    padding: 3rem 1.5rem;
+  }
+
+  .blog-list {
+    padding: 3rem 1.5rem;
+  }
+
+  .blog-content {
+    max-width: 100%;
+  }
+
 }
