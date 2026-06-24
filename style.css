@@ -70,17 +70,18 @@ nav a:hover {
 }
 
 .tagline {
-  font-size: 1rem;
-  letter-spacing: 0.2em;
+  font-size: 1.4rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #e8e8e8;
 }
 
 .location {
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #888;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 /* About page */
@@ -298,4 +299,41 @@ footer {
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+/* Home page posts */
+.home-posts {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+}
+
+.home-posts a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.home-post-title {
+  color: #666;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.home-posts a:hover .home-post-title {
+  color: #ffffff;
+}
+
+.home-post-date {
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
 }
