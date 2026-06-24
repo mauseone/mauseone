@@ -430,3 +430,15 @@ footer {
   }
 
 }
+/* Nav logo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+}
