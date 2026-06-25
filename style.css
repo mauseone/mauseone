@@ -19,6 +19,10 @@ nav {
   align-items: center;
   padding: 2rem 3rem;
   border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0a0a0a;
 }
 
 nav a {
