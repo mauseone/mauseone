@@ -1,7 +1,7 @@
 const posts = [
-  { title: "Shooting Hong Kong", file: "post-01.html" },
-  { title: "Shooting Tokyo", file: "post-02.html" },
-  { title: "Shooting Yogyakarta", file: "post-03.html" }
+  { title: "Shooting Hong Kong", file: "03-HongKong.html" },
+  { title: "Shooting Tokyo", file: "02-Tokyo.html" },
+  { title: "Shooting Yogyakarta", file: "01-Jogja.html" }
 ];
 
 function buildPostNav() {
