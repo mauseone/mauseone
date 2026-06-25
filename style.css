@@ -676,3 +676,9 @@ footer {
 .post-nav-links a:hover {
   color: #e8e8e8;
 }
+
+.about-note {
+  font-size: 0.85rem !important;
+  font-style: italic;
+  color: #555 !important;
+}
