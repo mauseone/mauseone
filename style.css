@@ -305,15 +305,40 @@ nav a:hover {
 .post-grid img {
   cursor: pointer;
 }
+
 /* Footer */
 footer {
-  text-align: center;
-  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
   border-top: 1px solid #1a1a1a;
+  margin-top: 4rem;
+}
+
+.footer-copy {
   color: #333;
   font-size: 0.75rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-socials a {
+  color: #444;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #e8e8e8;
 }
 
 /* Home page posts */
